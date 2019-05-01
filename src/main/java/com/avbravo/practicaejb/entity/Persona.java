@@ -5,14 +5,17 @@
  */
 package com.avbravo.practicaejb.entity;
 
-import javax.persistence.Id;
+import com.avbravo.jmoordb.anotations.Id;
+
+
 
 /**
  *
  * @author avbravo
  */
 public class Persona {
-     @Id
+
+    @Id
     private String cedula;
 
     private String nombre;
