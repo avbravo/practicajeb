@@ -5,7 +5,10 @@
  */
 package com.avbravo.practicaejb.entity;
 
+import com.avbravo.jmoordb.anotations.Embedded;
 import com.avbravo.jmoordb.anotations.Id;
+import com.avbravo.jmoordb.pojos.UserInfo;
+import java.util.List;
 
 
 
@@ -20,6 +23,17 @@ public class Persona {
 
     private String nombre;
     private Integer edad;
+    
+    @Embedded
+    private List<UserInfo> userInfo;
+
+    public Persona() {
+    }
+    
+    
+    
+    
+    
 
     public String getCedula() {
         return cedula;
