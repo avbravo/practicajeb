@@ -29,6 +29,14 @@ public class Persona {
 
     public Persona() {
     }
+
+    public List<UserInfo> getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(List<UserInfo> userInfo) {
+        this.userInfo = userInfo;
+    }
     
     
     
